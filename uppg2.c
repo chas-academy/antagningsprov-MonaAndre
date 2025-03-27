@@ -8,8 +8,17 @@
 #include <stdio.h>
 
 int main(){
+    int a, b, c, biggest;
+    scanf("%d %d %d", &a, &b, &c);
+    biggest = a;
+    if (b > biggest) {
+        biggest = b;
+    }
+    if (c > biggest) {
+        biggest = c;
+    }
 
-    // Skriv din kod här i main
+    printf("%d", biggest);
 
     return 0;
 }

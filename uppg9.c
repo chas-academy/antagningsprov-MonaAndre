@@ -16,10 +16,17 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h> 
 
 
 int main(){
+    char s1[4], s2[4];
+    int num1, num2;
+    scanf("%3s %3s", s1, s2);
+    num1 = atoi(s1);
+    num2 = atoi(s2);
 
-   // Skriv din kod här
+    printf("%d", num1 + num2);
 
+    return 0;
 }

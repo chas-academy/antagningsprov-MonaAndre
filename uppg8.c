@@ -11,7 +11,25 @@
 #include <stdio.h>
 #include <string.h>
 
+int isVocal(char c) {
+ 
+    if (c >= 'A' && c <= 'Z') {
+        c = c + 32; 
+    }
 
-int main(){
-   // Skriv din kod här
+    // För att kolla om det är en vokal
+    return (c == 'a' || c == 'e' || c == 'i' || 
+            c == 'o' || c == 'u' || c == 'y');
+}
+int main(){   char str[21];
+    int count = 0;
+    scanf("%20s", str);
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (isVocal(str[i])) {
+            count++;
+        }
+    }
+    printf("%d", count);
+
+    return 0; 
 }

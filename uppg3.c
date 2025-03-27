@@ -9,8 +9,11 @@
 #include <string.h>
 
 int main(){
-
-    // Skriv din kod här i main
+    char str[21];
+    int len;
+    scanf("%20s", str);
+    len = strlen(str);
+    printf("%d", len);
 
     return 0;
 }

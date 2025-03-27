@@ -8,8 +8,9 @@
 #include <stdio.h>
 
 int main(){
-
-    // Skriv din kod här i main
-
+    int num1, num2, summa;
+    scanf("%d %d", &num1, &num2);
+    summa = num1 + num2;
+    printf("%d", summa);
     return 0;
 }

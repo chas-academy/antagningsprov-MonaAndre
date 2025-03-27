@@ -10,8 +10,17 @@
 #include <string.h>
 
 int main(){
+    char str[21];
+    int len;
+    scanf("%20s", str);
+    len = strlen(str);
 
-    // Skriv din kod här i main
+    // Om för kort
+    if (len < 3) {
+        printf("Too short");
+    } else {
+        printf("%c", str[2]);
+    }
 
     return 0;
 }

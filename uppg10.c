@@ -14,9 +14,17 @@
 #include <stdlib.h>
 #include <string.h>
 
+int compare(const void *a, const void *b) {
+    return (*(char *)a - *(char *)b);
+}
 
 int main(){
+    char str[21];
+    scanf("%20s", str);
+    int len = strlen(str);
+    qsort(str, len, sizeof(char), compare);
 
-   // Skriv din kod här
+    printf("%s", str);
 
+    return 0;
 }

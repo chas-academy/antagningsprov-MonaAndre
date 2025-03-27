@@ -9,9 +9,7 @@
 #include <stdio.h>
 
 float BMI(float weight, float height){
-
-// Skriv din kod här
-
+return weight / (height * height);
 }
 
 
